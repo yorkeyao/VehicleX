@@ -1,0 +1,55 @@
+## VehicleX Engine
+
+VehicleX contains 1,362 vehicles of various models in 3D with fully editable attributes. We also propose an attribute descent approach to let VehicleX approximate the attributes in real-world datasets.  
+
+![fig1](https://github.com/yorkeyao/VehicleX/VehicleX/blob/master/images/Platform.jpg)  
+
+## News
+
+* (12/2019) We increased the vehicle numbers from 1,209 to 1,362 and labeled car types and color.  
+
+## Requirements
+
+* OS: Windows 10 or Ubuntu 14.04+.
+* Python 3.6 only.
+* Linux Server: X server with GLX module enabled.
+
+## Running with VehicleX
+
+The directly runnable version is available. We have both [windows version](https://drive.google.com/open?id=1cLKFhXc9HhKmsh05XrWSGKDs-GZ73_Hf) and [linux version](https://drive.google.com/open?id=1s7sZY17HCaPCENZI6SbxuNcBMWHgOkOU). You will also need background images prepared, which is available at [backgroud images](https://drive.google.com/open?id=11JQMzaF7tUOEjZXzgVbFUTDjpgD_6wTr). Please download them and store in a file structure like this: 
+
+```
+~
+└───VehicleX
+    └───Build-win(is 'Build-linus' if you choose linux)
+    │   │ VehicleX.exe(is 'VehicleX.x86_64' if you choose linux)
+    │   │ ...
+    │
+    └───Background_imgs
+    │   │ vdo (1).avi
+    │   │ ...
+    │
+    └───Inference.py
+```
+
+Besides, you will need to 
+
+```python
+pip install tensorflow-gpu==1.14
+pip install mlagents==0.10.1
+```
+
+After that, you can generate a dataset easily by running
+
+```python
+python Inference.py
+```
+
+## Unity Development
+
+If you wish to make changes to the Unity assets you will need to install the Unity Editor version. The source code for the engine itself will be released soon.
+
+
+
+
+
