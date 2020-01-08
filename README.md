@@ -1,14 +1,14 @@
 ## VehicleX 
 
-This repository include our code for paper 'Simulating Content Consistent Vehicle Datasets with Attribute Descent'. If you want to reproduce our results, you will need to 
+This repository includes our code for the paper 'Simulating Content Consistent Vehicle Datasets with Attribute Descent'. If you want to reproduce our results, you will need to 
 
 1) Generate images by VehicleX engine using attribute descent (content level damain apation); 
 
-2) Perform style level damain apation; 
+2) Perform style level domain adaption; 
 
 3) Train a Re-ID model. 
 
-Code for these three steps is available on ./VehicleX, ./StyleDA and ./Re-ID saparatly. 
+Code for these three steps is available on ./VehicleX, ./StyleDA and ./Re-ID separately. 
 
 If you find this code useful, please kindly cite:
 
@@ -27,3 +27,5 @@ If you find this code useful, please kindly cite:
   year={2019}
 }
 ```
+
+
