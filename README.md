@@ -4,11 +4,11 @@ This repository includes our code for the paper 'Simulating Content Consistent V
 
 1) Generate images by VehicleX engine using attribute descent (content level damain apation); 
 
-2) Perform style level domain adaption; 
+2) Perform style level domain adaption for generated images; 
 
-3) Train a Re-ID model. 
+3) Train a Re-ID model for style transfered images. 
 
-Code for first two steps is available on ./VehicleX and ./StyleDA separately. 
+The code for the first two steps is available on ./VehicleX and ./StyleDA separately. 
 
 If you find this code useful, please kindly cite:
 
