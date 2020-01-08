@@ -16,7 +16,7 @@ VehicleX contains 1,362 vehicles of various models in 3D with fully editable att
 
 ## Running with VehicleX
 
-The directly runnable version is available. We have both [windows version](https://drive.google.com/open?id=1cLKFhXc9HhKmsh05XrWSGKDs-GZ73_Hf) and [linux version](https://drive.google.com/open?id=1s7sZY17HCaPCENZI6SbxuNcBMWHgOkOU). You will also need background images prepared, which is available at [backgroud images](https://drive.google.com/open?id=11JQMzaF7tUOEjZXzgVbFUTDjpgD_6wTr). Please download them and store in a file structure like this: 
+The directly runnable version is available. We have both [windows version](https://drive.google.com/open?id=1cLKFhXc9HhKmsh05XrWSGKDs-GZ73_Hf) and [linux version](https://drive.google.com/open?id=1s7sZY17HCaPCENZI6SbxuNcBMWHgOkOU). You will also need [backgroud images](https://drive.google.com/open?id=11JQMzaF7tUOEjZXzgVbFUTDjpgD_6wTr) prepared. Please download them and store in a file structure like this: 
 
 ```
 ~
