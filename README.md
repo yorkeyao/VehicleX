@@ -8,7 +8,7 @@ This repository includes our code for the paper 'Simulating Content Consistent V
 
 3) Train a Re-ID model. 
 
-Code for these three steps is available on ./VehicleX, ./StyleDA and ./Re-ID separately. 
+Code for first two steps is available on ./VehicleX and ./StyleDA separately. 
 
 If you find this code useful, please kindly cite:
 
