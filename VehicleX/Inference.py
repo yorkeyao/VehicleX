@@ -90,7 +90,7 @@ def Get_Save_images_by_attributes(attribute_list, cam_id):
         type_id = int(env_info.vector_observations[0][6])
         if done:
             env_info = env.reset(train_mode=train_mode)[default_brain]
-            break
+            continue
         observation_gray = np.array(env_info.visual_observations[1])
         x, y = (observation_gray[0,:,:,0] > 0).nonzero()
         observation = np.array(env_info.visual_observations[0])
