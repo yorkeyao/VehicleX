@@ -65,11 +65,11 @@ training = False
 def Get_Save_images_by_attributes(attribute_list, cam_id):
     z = 0
     cnt = 0
-    angle = np.random.permutation (ancestral_sampler_1(pi = [], mu = attribute_list[:6], size=dataset_size + 100))
-    temp_intensity_list = np.random.normal(loc=attribute_list[6], scale=np.sqrt(0.4), size=dataset_size + 100)  
-    temp_light_direction_x_list = np.random.normal(loc=attribute_list[7], scale=np.sqrt(50), size=dataset_size + 100)
-    Cam_height_list = np.random.normal(loc=attribute_list[8], scale=2, size=dataset_size + 100) 
-    Cam_distance_y_list = np.random.normal(loc=attribute_list[9], scale=3, size=dataset_size + 100) 
+    angle = np.random.permutation (ancestral_sampler_1(pi = [], mu = attribute_list[:6], size=dataset_size * 3))
+    temp_intensity_list = np.random.normal(loc=attribute_list[6], scale=np.sqrt(0.4), size=dataset_size * 3)  
+    temp_light_direction_x_list = np.random.normal(loc=attribute_list[7], scale=np.sqrt(50), size=dataset_size * 3)
+    Cam_height_list = np.random.normal(loc=attribute_list[8], scale=2, size=dataset_size * 3) 
+    Cam_distance_y_list = np.random.normal(loc=attribute_list[9], scale=3, size=dataset_size * 3) 
     cam_str = "c" + str(i).zfill(3)
 
     env_info = env.reset(train_mode=train_mode)[default_brain]
