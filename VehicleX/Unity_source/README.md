@@ -20,7 +20,7 @@ VehicleX is based on [Unity](https://unity.com/). Here we released the whole [Un
 
 [Unity hub](https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html) is recommended to manage Unity projects. Please use Unity version 2019.3.0a8 or above. Once both the project and Unity editor are ready. The project can be opened easily by the Unity hub.    
 
-![fig1](https://github.com/yorkeyao/VehicleX/blob/master/VehicleX/Unity_source/Images/unity_hub.jpg)  
+![fig1](https://github.com/yorkeyao/VehicleX/blob/master/VehicleX/Unity_source/Images/unity_hub.PNG)  
 
 ## Image Generation by Unity editor
 
@@ -29,7 +29,7 @@ VehicleX is based on [Unity](https://unity.com/). Here we released the whole [Un
 * Run Inference.py and you will see a notice to press the play button. 
 * Press the play button ▶️ in Unity Editor and getting the images of Vehicles. 
 
-![fig2](https://github.com/yorkeyao/VehicleX/blob/master/VehicleX/Unity_source/Images/interface.jpg) 
+![fig2](https://github.com/yorkeyao/VehicleX/blob/master/VehicleX/Unity_source/Images/interface.PNG) 
 
 ## Notice
 
