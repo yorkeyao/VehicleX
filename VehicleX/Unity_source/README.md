@@ -34,6 +34,6 @@ VehicleX is based on [Unity](https://unity.com/). Here we released the whole [Un
 ## Notice
 
 * We need to make sure the resolution of the game is 1920*1080. It can be controled in the game tab.
-* If you see bug error CS1061: 'RawImage' does not contain a definition for 'm_Texture'. Please open this file and replace all content with ./Scipt/RawImage.cs.
+* If you see bug error CS1061: 'RawImage' does not contain a definition for 'm_Texture'. Please open this file and replace all content with ./Script/RawImage.cs.
 
 
