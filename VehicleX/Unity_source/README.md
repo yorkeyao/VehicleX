@@ -22,7 +22,7 @@ VehicleX is based on [Unity](https://unity.com/). Here we released the whole [Un
 
 ![fig1](https://github.com/yorkeyao/VehicleX/blob/master/VehicleX/Unity_source/Images/unity_hub.PNG)  
 
-## Image Generation by Unity editor
+## Image Generation by Unity Editor
 
 * Open the project using Unity hub and you will see the interface below.
 * Comment out line 30 and uncomment line 31 for Inference.py.  
