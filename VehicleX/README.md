@@ -6,6 +6,7 @@ VehicleX contains 1,362 vehicles of various models in 3D with fully editable att
 
 ## News
 
+* (1/2020) We have released the VehicleX source code.  
 * (12/2019) We increased the vehicle numbers from 1,209 to 1,362 and labeled car types and color.  
 
 ## Requirements
