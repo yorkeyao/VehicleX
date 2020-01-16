@@ -27,7 +27,7 @@ VehicleX is based on [Unity](https://unity.com/). Here we released the whole [Un
 * Open the project using Unity hub and you will see the interface below.
 * Comment out line 30 and uncomment line 31 for Inference.py.  
 * Run Inference.py and you will see a notice to press the play button. 
-* Press the play button ▶️ in Unity Editor and getting the images of Vehicles. 
+* Press the play button ▶️ in Unity Editor to get the images of Vehicles. 
 
 ![fig2](https://github.com/yorkeyao/VehicleX/blob/master/VehicleX/Unity_source/Images/interface.PNG) 
 
