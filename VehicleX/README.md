@@ -47,8 +47,7 @@ python Inference.py
 
 ## Unity Development
 
-If you wish to make changes to the Unity assets you will need to install the Unity Editor version. The source code for the engine itself will be released soon.
-
+If you wish to make changes to the Unity assets you will need to install the Unity Editor version. The source code for the engine itself has been released. Please see dir ./Unity_source.
 
 
 

@@ -27,7 +27,8 @@ print(sys.version)
 if (sys.version_info[0] < 3):
     raise Exception("ERROR: ML-Agents Toolkit (v0.3 onwards) requires Python 3")
 
-env = UnityEnvironment(file_name=env_name)
+env = UnityEnvironment(file_name=env_name) 
+# env = UnityEnvironment(file_name=None) # is None if you use Unity Editor
 
 # Set the default brain to work with
 default_brain = env.brain_names[0]
