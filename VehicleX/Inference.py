@@ -10,6 +10,7 @@ from mlagents.envs.environment import UnityEnvironment
 
 parser = argparse.ArgumentParser(description='outputs')
 parser.add_argument('--data_dir',default='./outputs/',type=str, help='./output path')
+parser.add_argument('--train_mode',default=False, help='Whether to run the environment in training or inference mode')
 
 opt = parser.parse_args()
 output_dir = opt.data_dir
@@ -18,7 +19,7 @@ if not os.path.isdir(output_dir):
     os.mkdir(output_dir)
 
 env_name = "./Build-win/VehicleX" # is ./Build-linux/VehicleX if linux is used
-train_mode = True  # Whether to run the environment in training or inference mode
+train_mode = opt.train_mode  # Whether to run the environment in training or inference mode
 
 print("Python version:")
 print(sys.version)
@@ -27,12 +28,13 @@ print(sys.version)
 if (sys.version_info[0] < 3):
     raise Exception("ERROR: ML-Agents Toolkit (v0.3 onwards) requires Python 3")
 
-env = UnityEnvironment(file_name=env_name) 
-# env = UnityEnvironment(file_name=None) # is None if you use Unity Editor
+# env = UnityEnvironment(file_name=env_name) 
+env = UnityEnvironment(file_name=None) # is None if you use Unity Editor
 
 # Set the default brain to work with
 default_brain = env.brain_names[0]
 brain = env.brains[default_brain]
+distance_bias = 12.11
 
 def ancestral_sampler_1(pi=[0.5, 0.5], 
                       mu=[0, 180], sigma=[20, 20], size=1):
@@ -61,9 +63,7 @@ Items = doc.createElement('Items')
 Items.setAttribute("number", "-")  
 TrainingImages.appendChild(Items)
 
-training = False
-
-def Get_Save_images_by_attributes(attribute_list, cam_id):
+def Get_Save_images_by_attributes(attribute_list, cam_id, dataset_size):
     z = 0
     cnt = 0
     angle = np.random.permutation (ancestral_sampler_1(pi = [], mu = attribute_list[:6], size=dataset_size * 3))
@@ -84,13 +84,13 @@ def Get_Save_images_by_attributes(attribute_list, cam_id):
         
         Cam_distance_x = random.uniform(-5, 5)
         scene_id = random.randint(1,59) 
-        env_info = env.step([[angle[z], temp_intensity_list[z], temp_light_direction_x_list[z], Cam_distance_y_list[z], Cam_distance_x, Cam_height_list[z], scene_id, training]])[default_brain] 
+        env_info = env.step([[angle[z], temp_intensity_list[z], temp_light_direction_x_list[z], Cam_distance_y_list[z], Cam_distance_x, Cam_height_list[z], scene_id, train_mode]])[default_brain] 
         done = env_info.local_done[0]
         car_id = int(env_info.vector_observations[0][4])
         color_id = int(env_info.vector_observations[0][5])
         type_id = int(env_info.vector_observations[0][6])
         if done:
-            env_info = env.reset(train_mode=train_mode)[default_brain]
+            env_info = env.reset(True)[default_brain]
             continue
         observation_gray = np.array(env_info.visual_observations[1])
         x, y = (observation_gray[0,:,:,0] > 0).nonzero()
@@ -107,14 +107,19 @@ def Get_Save_images_by_attributes(attribute_list, cam_id):
             Item.setAttribute("cameraID", cam_str)  
             Item.setAttribute("vehicleID", str(car_id).zfill(4))  
             Item.setAttribute("colorID", str(color_id))  
+            Item.setAttribute("orientation",str(round(angle[z], 1)))
+            Item.setAttribute("lightInt",str(round(temp_intensity_list[z], 1)))
+            Item.setAttribute("lightDir",str(round(temp_light_direction_x_list[z], 1)))
+            Item.setAttribute("camHei",str(round(Cam_height_list[z], 1)))
+            Item.setAttribute("camDis",str(round(Cam_distance_y_list[z] + distance_bias, 1)))
             Items.appendChild(Item)
         z = z + 1
 
-dataset_size = 3500
+dataset_size = 100
 attribute_list = [270, 90, 90, 270, 240, 300, 1.2, 45, 7, 1]
 
-for i in range (1, 100):
-    Get_Save_images_by_attributes(attribute_list, i)
+for i in range (1, 10):
+    Get_Save_images_by_attributes(attribute_list, i, dataset_size)
 
 filename = "train_label.xml"
 
