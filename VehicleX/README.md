@@ -45,7 +45,7 @@ You can learning attributes from VehicleID dataset with attribute descent using
 python train.py --setting './VehicleID.json' --output './VehicleID-out.json'
 ```
 
-After that, you can generate a dataset easily by running
+That will save learned attribute to the output json file. After that, you can generate a dataset easily by running
 
 ```python
 python inference.py --setting './VehicleID-out.json'
