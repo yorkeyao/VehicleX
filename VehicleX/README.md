@@ -42,7 +42,7 @@ pip install mlagents==0.10.1
 You can learning attributes from VehicleID dataset with attribute descent using
 
 ```python
-python train.py --setting './VehicleID.json'
+python train.py --setting './VehicleID.json' --output './VehicleID-out.json'
 ```
 
 After that, you can generate a dataset easily by running
