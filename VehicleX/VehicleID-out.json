@@ -1,0 +1,79 @@
+{
+    "name": "VehicleID training",
+    "camera number": 1,
+    "camera list": [
+        {
+            "camera id": 1,
+            "target dir": "./datasets/VehicleID.npz",
+            "output dir": "./output/",
+            "data size": 500,
+            "attributes": {
+                "orientation": [
+                    "Gaussian Mixture",
+                    [
+                        0,
+                        360,
+                        30
+                    ],
+                    [
+                        270,
+                        270,
+                        270,
+                        270,
+                        90,
+                        90
+                    ],
+                    [
+                        20,
+                        20,
+                        20,
+                        20,
+                        20,
+                        20
+                    ]
+                ],
+                "light intensity": [
+                    "Gaussian",
+                    [
+                        0,
+                        3,
+                        0.3
+                    ],
+                    0,
+                    0.63
+                ],
+                "light direction": [
+                    "Gaussian",
+                    [
+                        45,
+                        135,
+                        15
+                    ],
+                    45,
+                    7.07
+                ],
+                "camera height": [
+                    "Gaussian",
+                    [
+                        4,
+                        13,
+                        1
+                    ],
+                    4,
+                    0.4
+                ],
+                "camera distance": [
+                    "Gaussian",
+                    [
+                        -2,
+                        13,
+                        3
+                    ],
+                    -2,
+                    0.6
+                ]
+            },
+            "FD distance": "None"
+        }
+    ]
+}

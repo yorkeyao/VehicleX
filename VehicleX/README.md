@@ -39,11 +39,16 @@ Besides, you will need to
 pip install tensorflow-gpu==1.14
 pip install mlagents==0.10.1
 ```
+You can learning attributes from VehicleID dataset with attribute descent using
+
+```python
+python train.py --setting './VehicleID.json'
+```
 
 After that, you can generate a dataset easily by running
 
 ```python
-python Inference.py
+python inference.py --setting './VehicleID-out.json'
 ```
 
 ## Unity Development
