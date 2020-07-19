@@ -53,7 +53,7 @@ python inference.py --setting './VehicleID-out.json'
 
 ## Unity Development
 
-If you wish to make changes to the Unity assets you will need to install the Unity Editor version. The source code for the engine itself has been released. Please see dir ./Unity_source.
+If you wish to make changes to the Unity assets you will need to install the Unity Editor version. The source code for the engine itself has been released. Please see dir [./Unity_source](https://github.com/yorkeyao/VehicleX/tree/master/VehicleX/Unity_source).
 
 
 
