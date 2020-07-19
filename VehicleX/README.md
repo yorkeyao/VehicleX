@@ -30,7 +30,7 @@ The directly runnable version is available. We have both [windows version](https
     │   │ vdo (1).avi
     │   │ ...
     │
-    └───Inference.py
+    └───inference.py
 ```
 
 Besides, you will need to 
