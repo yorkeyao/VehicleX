@@ -1,5 +1,5 @@
 # SPGAN
-This repo is based on Weijian's [SPGAN](https://github.com/Simon4Yan/eSPGAN), which is a great style level domain adaption technique. The code structure shows as follows:
+This repo is based on Weijian's [SPGAN](https://github.com/Simon4Yan/eSPGAN). The code structure shows as follows:
 
 ```
 ~
