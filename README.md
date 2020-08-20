@@ -20,7 +20,7 @@ We make generated images from VehicleX directly. We have performed domain adapta
 
 |              | VeRi-776         | VehicleID        | CityFlow  |
 |--------------|------------------|------------------|-----------|
-| w Style      | [Baidu](),[Google](https://drive.google.com/file/d/1wLmUWY5clm88Jcmu1e5ITMYNCht_mnds/view?usp=sharing) | [Baidu](),[Google](https://drive.google.com/file/d/1C6VAf_Z19HuVPuUlb738HPRxpZKwWGx_/view?usp=sharing) | [website](https://www.aicitychallenge.org/2020-track2-download/) |
+| w Style      | [Baidu](https://pan.baidu.com/s/1q8t4mLGNVScjZevHFneVpw)(pwd: nz36),[Google](https://drive.google.com/file/d/1wLmUWY5clm88Jcmu1e5ITMYNCht_mnds/view?usp=sharing) | [Baidu](https://pan.baidu.com/s/1U16Z3GmTzEs-H_TrV24qlA)(pwd:akjh),[Google](https://drive.google.com/file/d/1C6VAf_Z19HuVPuUlb738HPRxpZKwWGx_/view?usp=sharing) | [website](https://www.aicitychallenge.org/2020-track2-download/) |
 
 The adapted image for CityFlow is used in AI City Challenge 2020 track 2. The labeling format is "id_cam_num.jpg":
 
