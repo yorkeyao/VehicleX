@@ -22,7 +22,7 @@ We make generated images from VehicleX directly. We have performed domain adapta
 |--------------|------------------|------------------|-----------|
 | w Style      | [Baidu](),[Google](https://drive.google.com/file/d/1wLmUWY5clm88Jcmu1e5ITMYNCht_mnds/view?usp=sharing) | [Baidu](),[Google](https://drive.google.com/file/d/1C6VAf_Z19HuVPuUlb738HPRxpZKwWGx_/view?usp=sharing) | [website](https://www.aicitychallenge.org/2020-track2-download/) |
 
-The adapted image for CityFlow is the same version as used in AI City Challenge 2020 track 2. The labeling format is "id_cam_num.jpg":
+The adapted image for CityFlow is used in AI City Challenge 2020 track 2. The labeling format is "id_cam_num.jpg":
 
 Taking "0001_c001_33.jpg" as an example: 
 *  0001 means the vehicle id is 0001
