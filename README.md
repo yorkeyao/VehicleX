@@ -12,7 +12,7 @@ The whole procedure of generating VehicleX data is in Four steps:
 
 3) Train a re-ID model for style transfered images. 
 
-The code for the three steps is available on [./VehicleX Interface](), [./StyleDA]() and [./ReID]() respectively. You are welcomed to use every single part of the code for your research purpose. 
+The code for the three steps is available on [./VehicleX Interface](https://github.com/yorkeyao/VehicleX/tree/master/VehicleX%20Interface), [./StyleDA](https://github.com/yorkeyao/VehicleX/tree/master/StyleDA) and [./ReID](https://github.com/yorkeyao/VehicleX/tree/master/Re-ID) respectively. You are welcomed to use every single part of the code for your research purpose. 
 
 ## VehicleX Adapted Images  
 
@@ -35,11 +35,11 @@ We released our joint training code (two stage training) with VeRi-776, VehicleI
 
 ## VehicleX Engine (Unity-python Interface)
 
-We provide a Unity-Python Interface, which you may generate your own images from python code without modifying Unity Environment or C# programming. You may perform attribute learning using attribute descent and then generate vechile data with learned attributes. Please check [./VehicleX Interface]() for more details. 
+We provide a Unity-Python Interface, which you may generate your own images from python code without modifying Unity Environment or C# programming. You may perform attribute learning using attribute descent and then generate vechile data with learned attributes. Please check [./VehicleX Interface](https://github.com/yorkeyao/VehicleX/tree/master/VehicleX%20Interface) for more details. 
 
 ## VehicleX Source Code and 3D Vehicle Models
 
-If you want to make modification to the 3D environment or use our 3D vechile models only (i.e. for 3D related project). We provide .fbx format vehicle models, which you may import to Unity, Unreal or Blender. We also released entire Unity project. Please check [./Unity_Source]() for more details.
+If you want to make modification to the 3D environment or use our 3D vechile models only (i.e. for 3D related project). We provide .fbx format vehicle models, which you may import to Unity, Unreal or Blender. We also released entire Unity project. Please check [./Unity_Source](https://github.com/yorkeyao/VehicleX/tree/master/Unity_source) for more details.
 
 If you find this code useful, please kindly cite:
 
