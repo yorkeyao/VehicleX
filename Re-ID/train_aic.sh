@@ -1,0 +1,5 @@
+CUDA_VISIBLE_DEVICES='0,1' python ZJU_baseline.py --train -d aic_reid_sys -r true -s true --logs-dir logs/AIC/zju_joint_stageI --height 256 --width 256 --lr 0.01 --step-size 30,60,80 --warmup 10 --LSR --backbone densenet121 --features 1024 --BNneck -ls 1 -b 64 --epochs 120
+
+CUDA_VISIBLE_DEVICES='0,1' python ZJU_baseline.py --finetune -d aic_reid_sys -r true -s false --resume logs/AIC/zju_joint_stageI/model_best.pth.tar --logs-dir logs/AIC/zju_joint_stageII --height 256 --width 256 --lr 0.01 --step-size 30,60,80 --warmup 10 --LSR --backbone densenet121 --features 1024 --BNneck -ls 1 -b 64 
+
+CUDA_VISIBLE_DEVICES='0,1' python ZJU_baseline.py --inference -d aic_reid_sys --resume logs/AIC/zju_joint_stageII/model_best.pth.tar --logs-dir logs/AIC/zju_joint_stageII --height 256 --width 256 --lr 0.01 --step-size 30,60,80 --warmup 10 --LSR --backbone densenet121 --features 1024 --BNneck -ls 1 -b 64 --epochs 120
