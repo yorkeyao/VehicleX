@@ -1,10 +1,10 @@
 ## VehicleX 
 
-This repository includes our code for the paper 'Simulating Content Consistent Vehicle Datasets with Attribute Descent' in ECCV2020. The VehicleX data is also with [CVPR AI City Challenge 2020](https://www.aicitychallenge.org/) and [Alice Challenge](http://alice-challenge.site/)
+This repository includes our code for the paper 'Simulating Content Consistent Vehicle Datasets with Attribute Descent' in ECCV2020. The VehicleX data is also with [CVPR AI City Challenge 2020](https://www.aicitychallenge.org/) and [Alice Challenge](http://alice-challenge.site/).
 
-Related material: [Paper](https://arxiv.org/abs/1912.08855), [Demo](https://simmer.io/@yorkeyao/vehiclex-demo-s)
+Related material: [Paper](https://arxiv.org/abs/1912.08855), [Demo](https://simmer.io/@yorkeyao/vehiclex-demo-s).
 
-The whole procedure of generating VehicleX data is in Four steps:
+The whole procedure of generating VehicleX data is in three steps:
 
 1) Attribute distribution learning and generate images by VehicleX engine with learned attributes; 
 
