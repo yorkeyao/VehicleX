@@ -12,7 +12,7 @@ You may play with our [Demo](https://simmer.io/@yorkeyao/vehiclex-demo-s) for a 
 
 3) Train a re-ID model for style transfered images. 
 
-The code for the three steps is available on [./VehicleX Interface](https://github.com/yorkeyao/VehicleX/tree/master/VehicleX%20Interface), [./StyleDA](https://github.com/yorkeyao/VehicleX/tree/master/StyleDA) and [./Re-ID](https://github.com/yorkeyao/VehicleX/tree/master/Re-ID) respectively. You are welcomed to use every single part of the code for your research purpose. Source code for unity project is also available on [./Unity_Source](https://github.com/yorkeyao/VehicleX/tree/master/Unity_source).
+The code for the three steps is available on [./VehicleX Interface](https://github.com/yorkeyao/VehicleX/tree/master/VehicleX%20Interface), [./StyleDA](https://github.com/yorkeyao/VehicleX/tree/master/StyleDA) and [./Re-ID](https://github.com/yorkeyao/VehicleX/tree/master/Re-ID) respectively. You are welcomed to use every single part of the code for your research purpose. Unity source code for VehicleX is also available on [./Unity_Source](https://github.com/yorkeyao/VehicleX/tree/master/Unity_source).
 
 ## VehicleX Adapted Images  
 
