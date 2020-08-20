@@ -1,5 +1,5 @@
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = "1"
+os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 
 # from __future__ import absolute_import
 # from __future__ import division
@@ -16,6 +16,14 @@ import torchvision.transforms as transforms
 import torchvision
 import utils.utils as utils
 import numpy as np
+import argparse
+
+parser = argparse.ArgumentParser(description='spgan test')
+parser.add_argument('--source_path',default='../datasets/testA/',type=str, help='./source dataset')
+parser.add_argument('--save_path',default='./testA(VeRi_style)/',type=str, help='./source dataset')
+parser.add_argument('--checkpoint',default='./checkpoints/sys2VeRi.ckpt',type=str, help='./source dataset')
+
+opt = parser.parse_args()
 
 """params"""
 lr = 0.0002
@@ -38,9 +46,7 @@ transform = transforms.Compose([
     transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
 ])
 
-a_test_dir = 'D:\CVPR\ml-agents-master/notebooks/aic_final/'
-
-
+a_test_dir = opt.source_path
 
 os.symlink(os.path.abspath(a_test_dir), os.path.join(a_test_dir, '0'))
 # b_test_dir = '../datasets/sys2veri/testB'
@@ -49,11 +55,11 @@ a_test_data = dsets.ImageFolder(a_test_dir, transform=transform)
 a_test_loader = torch.utils.data.DataLoader(a_test_data, batch_size=batch_size, num_workers=0)
 # b_test_loader = torch.utils.data.DataLoader(b_test_data, batch_size=batch_size, num_workers=0)
 
-ckpt_dir = './checkpoints/spgan_sys2AIC_random_baseline/Epoch_(12).ckpt'
+ckpt_dir = opt.checkpoint
 ckpt = utils.load_checkpoint(ckpt_dir)
 
 Ga.load_state_dict(ckpt['Ga'])
-Gb.load_state_dict(ckpt['Gb'])
+# Gb.load_state_dict(ckpt['Gb'])
 
 # Ga.load_state_dict(torch.load('./checkpoints/spgan_last/Epoch_(1).ckpt', map_location=lambda storage, loc: storage)['Ga'])
 # Gb.load_state_dict(torch.load('./checkpoints/spgan_last/Epoch_(1).ckpt', map_location=lambda storage, loc: storage)['Gb'])
@@ -62,12 +68,11 @@ filenamea.sort()
 # dirpathb, b, filenameb = os.walk('./datasets/sys2veri/testB/0').__next__()
 # filenameb.sort()
 
-save_dir_a = './sys/aic_final_DA/'
-save_dir_b = './real/bounding_box_train_spgan_last/'
-utils.mkdir([save_dir_a, save_dir_b])
+save_dir_a = opt.save_path
+utils.mkdir(save_dir_a)
 
 Ga = Ga.cuda()
-Gb = Gb.cuda()
+# Gb = Gb.cuda()
 
 i = 0
 
@@ -75,8 +80,6 @@ for  a_test in (a_test_loader):
     Gb.eval()
     a_test = a_test[0]
     a_test = Variable(a_test.cuda(), volatile=True)
-    # print (np.shape (a_test))
-    # assert (0)
     a_out = Gb(a_test)
     for j in range(batch_size):
         torchvision.utils.save_image((a_out.data[j] + 1) / 2.0, save_dir_a + filenamea[i+j], padding=0)

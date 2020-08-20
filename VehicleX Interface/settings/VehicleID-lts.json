@@ -1,0 +1,22 @@
+{
+    "name": "VehicleID training",
+    "camera number": 1,
+    "camera list":
+        [
+            {
+                "camera id": 0,
+                "target dir": "./datasets/VehicleID_V1.0/VehicleID.npz",
+                "output dir": "./VID_ReID_Simulation/",
+                "data size": 113346,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [-360, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            }
+        ]
+}

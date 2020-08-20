@@ -1,0 +1,307 @@
+{
+    "name": "VeRi training",
+    "camera number": 20,
+    "camera list":
+        [
+            {
+                "camera id": 1,
+                "target dir": "./datasets/VeRi/cam_split/1",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 4552,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 2,
+                "target dir": "./datasets/VeRi/cam_split/2",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 4242,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 3,
+                "target dir": "./datasets/VeRi/cam_split/3",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 4540,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 4,
+                "target dir": "./datasets/VeRi/cam_split/4",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 4460,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 5,
+                "target dir": "./datasets/VeRi/cam_split/5",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 1804,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 6,
+                "target dir": "./datasets/VeRi/cam_split/6",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 4066,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 7,
+                "target dir": "./datasets/VeRi/cam_split/7",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 1496,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 8,
+                "target dir": "./datasets/VeRi/cam_split/8",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 3428,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 9,
+                "target dir": "./datasets/VeRi/cam_split/9",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 3578,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 10,
+                "target dir": "./datasets/VeRi/cam_split/10",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 4078,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 11,
+                "target dir": "./datasets/VeRi/cam_split/11",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 4120,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 12,
+                "target dir": "./datasets/VeRi/cam_split/12",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 4550,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 13,
+                "target dir": "./datasets/VeRi/cam_split/13",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 4378,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 14,
+                "target dir": "./datasets/VeRi/cam_split/14",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 5466,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 15,
+                "target dir": "./datasets/VeRi/cam_split/15",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 5298,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 16,
+                "target dir": "./datasets/VeRi/cam_split/16",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 4832,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 17,
+                "target dir": "./datasets/VeRi/cam_split/17",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 5204,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 18,
+                "target dir": "./datasets/VeRi/cam_split/18",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 344,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 19,
+                "target dir": "./datasets/VeRi/cam_split/19",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 5038,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            },
+            {
+                "camera id": 20,
+                "target dir": "./datasets/VeRi/cam_split/20",
+                "output dir": "./VeRi_ReID_Simulation/",
+                "data size": 42,
+                "attributes": 
+                {
+                    "orientation": ["Gaussian Mixture", [0, 360, 30], [0, 0, 0, 0, 0, 0], [20, 20, 20, 20, 20, 20]],
+                    "light intensity": ["Gaussian", [0, 3, 0.3], 0, 0.63],
+                    "light direction": ["Gaussian", [45, 135, 15], 45, 7.07],
+                    "camera height": ["Gaussian", [4, 13, 1], 4, 0.4],
+                    "camera distance": ["Gaussian", [-2, 13, 3], -2, 0.6]
+                },
+                "FD distance": "None"
+            }
+        ]
+}
