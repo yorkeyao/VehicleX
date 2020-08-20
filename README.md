@@ -12,7 +12,7 @@ The whole procedure of generating VehicleX data is in Four steps:
 
 3) Train a re-ID model for style transfered images. 
 
-The code for the three steps is available on [./VehicleX Interface](https://github.com/yorkeyao/VehicleX/tree/master/VehicleX%20Interface), [./StyleDA](https://github.com/yorkeyao/VehicleX/tree/master/StyleDA) and [./ReID](https://github.com/yorkeyao/VehicleX/tree/master/Re-ID) respectively. You are welcomed to use every single part of the code for your research purpose. 
+The code for the three steps is available on [./VehicleX Interface](https://github.com/yorkeyao/VehicleX/tree/master/VehicleX%20Interface), [./StyleDA](https://github.com/yorkeyao/VehicleX/tree/master/StyleDA) and [./Re-ID](https://github.com/yorkeyao/VehicleX/tree/master/Re-ID) respectively. You are welcomed to use every single part of the code for your research purpose. 
 
 ## VehicleX Adapted Images  
 
@@ -31,7 +31,7 @@ Taking "0001_c001_33.jpg" as an example:
 
 We also provide detailed labeling include vechile orientation, light intensity, light direction, camera distance, camera height, vehicle type and vehicle color in the XML file. The detailed labeling allows [multi task learning](https://github.com/NVlabs/PAMTRI).   
 
-We released our joint training code (two stage training) with VeRi-776, VehicleID and CityFlow in [./reID]()
+We released our joint training code (two stage training) with VeRi-776, VehicleID and CityFlow in [./Re-ID](https://github.com/yorkeyao/VehicleX/tree/master/Re-ID)
 
 ## VehicleX Engine (Unity-python Interface)
 
