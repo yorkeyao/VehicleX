@@ -132,7 +132,7 @@ On the server side, you need to config /etc/ssh/sshd_config to have [X11Forwardi
 
 ## Unity Development
 
-If you wish to make changes to the Unity assets you will need to install the Unity Editor. The [source code](https://drive.google.com/file/d/1vMqNhjTZmiFr9fAzU2HMWxqZ5-Fb_N_W/view?usp=sharing) for the engine itself has been released. Please see more details in page [./Unity_source](https://github.com/yorkeyao/VehicleX/tree/master/VehicleX/Unity_source). We show how to configure the source code step by step. 
+If you wish to make changes to the Unity assets you will need to install the Unity Editor. The [source code](https://drive.google.com/file/d/1vMqNhjTZmiFr9fAzU2HMWxqZ5-Fb_N_W/view?usp=sharing) for the engine itself has been released. Please see more details in page [./Unity_source](https://github.com/yorkeyao/VehicleX/tree/master/Unity_source). We show how to configure the source code step by step. 
 
 
 
