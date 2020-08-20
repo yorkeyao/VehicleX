@@ -6,7 +6,7 @@ Related material: [Paper](https://arxiv.org/abs/1912.08855), [Demo](https://simm
 
 You may play with our [Demo](https://simmer.io/@yorkeyao/vehiclex-demo-s) for a quick view of our data. The whole procedure of generating VehicleX images is in three steps:
 
-1) Attribute distribution learning and generate images by VehicleX engine with learned attributes; 
+1) Attribute distribution learning and generate images by VehicleX engine with learned attributes (content level domain adaptation); 
 
 2) Perform style level domain adaptation (SPGAN) for generated images; 
 
