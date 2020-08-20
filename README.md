@@ -35,7 +35,7 @@ We released our joint training code (two stage training) with VeRi-776, VehicleI
 
 ## VehicleX Engine (Unity-python Interface)
 
-We provide a Unity-Python Interface, which you may generate your own images from python code without modifying Unity Environment or C# programming. You may perform attribute learning using attribute descent and then generate vechile data with learned attributes. Please check [./VehicleX Interface](https://github.com/yorkeyao/VehicleX/tree/master/VehicleX%20Interface) for more details. 
+We provide a Unity-Python Interface, which you may generate your own images from python code without modifying Unity Environment or C# programming. You can perform attribute learning using attribute descent and then generate vechile data with learned attributes. Please check [./VehicleX Interface](https://github.com/yorkeyao/VehicleX/tree/master/VehicleX%20Interface) for more details. 
 
 ## VehicleX Source Code and 3D Vehicle Models
 
