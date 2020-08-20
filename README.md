@@ -4,7 +4,7 @@ This repository includes our code for the paper 'Simulating Content Consistent V
 
 Related material: [Paper](https://arxiv.org/abs/1912.08855), [Demo](https://simmer.io/@yorkeyao/vehiclex-demo-s).
 
-The whole procedure of generating VehicleX data is in three steps:
+You may play with our [Demo](https://simmer.io/@yorkeyao/vehiclex-demo-s) for a quick view of our data. The whole procedure of generating VehicleX data is in three steps:
 
 1) Attribute distribution learning and generate images by VehicleX engine with learned attributes; 
 
