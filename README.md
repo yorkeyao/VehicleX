@@ -4,7 +4,7 @@ This repository includes our code for the paper 'Simulating Content Consistent V
 
 Related material: [Paper](https://arxiv.org/abs/1912.08855), [Demo](https://simmer.io/@yorkeyao/vehiclex-demo-s).
 
-You may play with our [Demo](https://simmer.io/@yorkeyao/vehiclex-demo-s) for a quick view of our data. The whole procedure of generating VehicleX images is in three steps:
+You may play with our [Demo](https://simmer.io/@yorkeyao/vehiclex-demo-s) for a quick view of our data. This demo contains 70 ids out of 1362. The whole procedure of generating VehicleX images is in three steps:
 
 1) Attribute distribution learning and generate images by VehicleX engine with learned attributes (content level domain adaptation); 
 
@@ -20,9 +20,9 @@ We make generated images from VehicleX directly. We have performed domain adapta
 
 |              | VeRi-776         | VehicleID        | CityFlow  |
 |--------------|------------------|------------------|-----------|
-| w Style      | [Baidu](https://pan.baidu.com/s/1q8t4mLGNVScjZevHFneVpw)(pwd:nz36),[Google](https://drive.google.com/file/d/1wLmUWY5clm88Jcmu1e5ITMYNCht_mnds/view?usp=sharing) | [Baidu](https://pan.baidu.com/s/1U16Z3GmTzEs-H_TrV24qlA)(pwd:akjh),[Google](https://drive.google.com/file/d/1C6VAf_Z19HuVPuUlb738HPRxpZKwWGx_/view?usp=sharing) | [website](https://www.aicitychallenge.org/2020-track2-download/) |
+| w Style      | [Baidu](https://pan.baidu.com/s/1q8t4mLGNVScjZevHFneVpw)(pwd:nz36),[Google](https://drive.google.com/file/d/1wLmUWY5clm88Jcmu1e5ITMYNCht_mnds/view?usp=sharing) | [Baidu](https://pan.baidu.com/s/1U16Z3GmTzEs-H_TrV24qlA)(pwd:akjh),[Google](https://drive.google.com/file/d/1C6VAf_Z19HuVPuUlb738HPRxpZKwWGx_/view?usp=sharing) | [Website](https://www.aicitychallenge.org/2020-track2-download/) |
 
-The adapted image for CityFlow is used in AI City Challenge 2020 track 2. The labeling format is "id_cam_num.jpg":
+The adapted image for CityFlow is used in AI City Challenge 2020 track 2. You may need to sign up to get dataset access. The labeling format for all vehicleX data is "id_cam_num.jpg":
 
 Taking "0001_c001_33.jpg" as an example: 
 *  0001 means the vehicle id is 0001
