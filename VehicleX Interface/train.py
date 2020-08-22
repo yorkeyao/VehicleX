@@ -32,7 +32,7 @@ parser.add_argument('--output',default='./settings/VehicleID-test.json',type=str
 parser.add_argument('--save_dir',default='./datasets/temporary/',type=str, help='./temporary dataset path')
 parser.add_argument('--train_mode',type=str2bool, nargs='?',
                         const=True, default=True, help="Whether to run the environment in training or inference mode")
-parser.add_argument('--FD_model', type=str, default='posenet', choices=['inception', 'inception'], help='model to calculate FD distance')
+parser.add_argument('--FD_model', type=str, default='inception', choices=['inception', 'posenet'], help='model to calculate FD distance')
 parser.add_argument('--log_path', type=str, default='./logs/log.txt', help='Name of the Unity environment binary to launch')
 parser.add_argument('--env_path', type=str, default='./Build-win/VehicleX')
 parser.add_argument('--sample_size', type=int, default=400, help="temporary dataset generation size")
