@@ -12,7 +12,7 @@ You may play with our [Demo](https://simmer.io/@yorkeyao/vehiclex-demo-s) for a 
 
 3) Train a re-ID model for style transfered images. 
 
-The code for the three steps is available on [./VehicleX Interface](https://github.com/yorkeyao/VehicleX/tree/master/VehicleX%20Interface), [./StyleDA](https://github.com/yorkeyao/VehicleX/tree/master/StyleDA) and [./Re-ID](https://github.com/yorkeyao/VehicleX/tree/master/Re-ID) respectively. You are welcomed to use every single part of the code for your research purpose. Unity source code for VehicleX is also available on [./Unity_Source](https://github.com/yorkeyao/VehicleX/tree/master/Unity_source).
+The code for the three steps is available on [./VehicleX Interface](https://github.com/yorkeyao/VehicleX/tree/master/VehicleX%20Interface), [./StyleDA](https://github.com/yorkeyao/VehicleX/tree/master/StyleDA) and [./Re-ID](https://github.com/yorkeyao/VehicleX/tree/master/Re-ID) respectively. You are welcomed to use every single part of the code for your research purpose. Unity source code for VehicleX is also available on [./Unity Source](https://github.com/yorkeyao/VehicleX/tree/master/Unity%20Source).
 
 ## VehicleX Adapted Images  
 
@@ -39,7 +39,7 @@ We provide a Unity-Python Interface, which you may generate your own images from
 
 ## VehicleX Source Code and 3D Vehicle Models
 
-If you want to make modification to the 3D environment or use our 3D vechile models only (i.e. for 3D related project). We provide .fbx format vehicle models, which you may import to Unity, Unreal or Blender. We also released entire Unity project. Please check [./Unity_Source](https://github.com/yorkeyao/VehicleX/tree/master/Unity_source) for more details.
+If you want to make modification to the 3D environment or use our 3D vechile models only (i.e. for 3D related project). We provide .fbx format vehicle models, which you may import to Unity, Unreal or Blender. We also released entire Unity project. Please check [./Unity Source](https://github.com/yorkeyao/VehicleX/tree/master/Unity%20Source) for more details.
 
 If you find this code useful, please kindly cite:
 
