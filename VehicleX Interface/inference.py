@@ -27,6 +27,8 @@ print(sys.version)
 # check Python version
 if (sys.version_info[0] < 3):
     raise Exception("ERROR: ML-Agents Toolkit (v0.3 onwards) requires Python 3")
+if (not os.path.exists("./Background_imgs") and train_mode == False):
+    raise Exception("The inference mode requre background images")
 
 # env = UnityEnvironment(file_name=None)
 env = UnityEnvironment(file_name=env_name) # is None if you use Unity Editor
