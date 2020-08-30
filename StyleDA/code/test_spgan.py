@@ -36,7 +36,7 @@ device = torch.device('cuda')
 # Ga = models.Generator()
 # Gb = models.Generator()
 
-Ga = nn.DataParallel(models.Generator()).to(device)
+# Ga = nn.DataParallel(models.Generator()).to(device)
 Gb = nn.DataParallel(models.Generator()).to(device)
 
 transform = transforms.Compose([
@@ -58,8 +58,8 @@ a_test_loader = torch.utils.data.DataLoader(a_test_data, batch_size=batch_size, 
 ckpt_dir = opt.checkpoint
 ckpt = utils.load_checkpoint(ckpt_dir)
 
-Ga.load_state_dict(ckpt['Ga'])
-# Gb.load_state_dict(ckpt['Gb'])
+# Ga.load_state_dict(ckpt['Ga'])
+Gb.load_state_dict(ckpt['Gb'])
 
 # Ga.load_state_dict(torch.load('./checkpoints/spgan_last/Epoch_(1).ckpt', map_location=lambda storage, loc: storage)['Ga'])
 # Gb.load_state_dict(torch.load('./checkpoints/spgan_last/Epoch_(1).ckpt', map_location=lambda storage, loc: storage)['Gb'])
@@ -71,8 +71,8 @@ filenamea.sort()
 save_dir_a = opt.save_path
 utils.mkdir(save_dir_a)
 
-Ga = Ga.cuda()
-# Gb = Gb.cuda()
+# Ga = Ga.cuda()
+Gb = Gb.cuda()
 
 i = 0
 
@@ -97,7 +97,3 @@ for  a_test in (a_test_loader):
 #         torchvision.utils.save_image((b_out.data[j] + 1) / 2.0, save_dir_b + filenameb[i+j], padding=0)
 #     i+=batch_size
 #     if i%128 ==0: print(i)
-
-
-
-
