@@ -53,7 +53,6 @@ class VeRi(object):
                 fname = "../" + self.sys_path.split('/')[-2] + "/" + osp.basename(fpath)
                 pid, cam = map(int, pattern.search(fname).groups())
                 pid = -pid
-                if pid == -1: continue
                 if pid not in all_pids:
                     all_pids[pid] = len(all_pids)
                 pid = all_pids[pid]
