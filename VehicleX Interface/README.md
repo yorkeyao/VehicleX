@@ -18,7 +18,7 @@ VehicleX contains 1,362 vehicles of various models in 3D with fully editable att
 
 ## Running with VehicleX Unity-Python Interface
 
-The directly runnable version is available. We have both [windows version](https://drive.google.com/file/d/1cLKFhXc9HhKmsh05XrWSGKDs-GZ73_Hf/view?usp=sharing) and [linux version](https://drive.google.com/file/d/1cLKFhXc9HhKmsh05XrWSGKDs-GZ73_Hf/view?usp=sharing). You will also need [backgroud images](https://drive.google.com/file/d/1dx03ijDzJkbVp0XnZbvKLTYZSYMDJHsf/view?usp=sharing) prepared. Please download them and store in a file structure like this: 
+The directly runnable version is available. We have both [windows version](https://drive.google.com/file/d/1cLKFhXc9HhKmsh05XrWSGKDs-GZ73_Hf/view?usp=sharing) and [linux version](https://drive.google.com/file/d/1cLKFhXc9HhKmsh05XrWSGKDs-GZ73_Hf/view?usp=sharing). You will also need [backgroud images](https://drive.google.com/file/d/1dx03ijDzJkbVp0XnZbvKLTYZSYMDJHsf/view?usp=sharing) prepared. Please download them by click links above and store in a file structure like this: 
 
 ```
 ~
@@ -54,13 +54,13 @@ pip install scipy==1.0
 For a quick environment check, you can learning attributes from VehicleID extracted features with attribute descent using
 
 ```python
-python train.py --setting './VehicleID.json' --output './VehicleID-out.json'
+python train.py --setting './settings/VehicleID.json' --output './settings/VehicleID-out.json'
 ```
 
 That will save learned attribute to the output json file. After that, you can generate a dataset easily by running
 
 ```python
-python inference.py --setting './VehicleID-out.json'
+python inference.py --setting './settings/VehicleID-out.json'
 ```
 
 ## Running with Real Data
@@ -98,11 +98,11 @@ python preprocess-veri.py
 After this, you may perform attribute descent by running:
 
 ```python
-python train.py --setting './VehicleID.json' --output './VehicleID-out.json'
+python train.py --setting './settings/VehicleID.json' --output './settings/VehicleID-out.json'
 ```
 or for VeRi
 ```python
-python train.py --setting './VeRi.json' --output './VeRi-out.json'
+python train.py --setting './settings/VeRi.json' --output './settings/VeRi-out.json'
 ```
 
 if you do not follow the file structure above. You may need to change target paths in the json file. 
@@ -112,7 +112,7 @@ if you do not follow the file structure above. You may need to change target pat
 We also provide a reinforcement based method following [LTS](https://arxiv.org/abs/1810.02513v2) framework. You may run with:  
 
 ```python
-python train_LTS.py --setting './VehicleID-LTS.json' --output './VehicleID-out.json'
+python train_LTS.py --setting './settings/VehicleID-LTS.json' --output './settings/VehicleID-out.json'
 ```
 
 ## Posenet Support
@@ -120,7 +120,7 @@ python train_LTS.py --setting './VehicleID-LTS.json' --output './VehicleID-out.j
 Posenet may also used to calculate fd score. It is based from [HRNet](https://github.com/NVlabs/PAMTRI/tree/master/PoseEstNet) in CVPR 2019. We provide a trained model from VeRi to calculate fd. You may switch to posenet by
 
 ```python
-python train.py --setting './VehicleID-real.json' --output './VehicleID-out.json' --FD_model 'posenet'
+python train.py --setting './settings/VehicleID-real.json' --output './settings/VehicleID-out.json' --FD_model 'posenet'
 ```
 
 ## Running with Linux Server
@@ -133,7 +133,7 @@ On the server side, you need to config /etc/ssh/sshd_config to have [X11Forwardi
 
 ## Unity Development
 
-If you wish to make changes to the Unity assets you will need to install the Unity Editor. The [source code](https://drive.google.com/file/d/1vMqNhjTZmiFr9fAzU2HMWxqZ5-Fb_N_W/view?usp=sharing) for the engine itself has been released. Please see more details in page [./Unity source](https://github.com/yorkeyao/VehicleX/tree/master/Unity%20Source). We show how to configure the source code step by step. 
+If you wish to make changes to the Unity assets you will need to install the Unity Editor. The [source code](https://drive.google.com/file/d/17Jn5iov3e1rkWgOhID5c2RCnGWTxiuWA/view?usp=sharing) for the engine itself has been released. Please see more details in page [./Unity source](https://github.com/yorkeyao/VehicleX/tree/master/Unity%20Source). We show how to configure the source code step by step. 
 
 
 

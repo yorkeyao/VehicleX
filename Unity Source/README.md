@@ -1,7 +1,7 @@
 
 ## Source Code 
 
-VehicleX is based on [Unity](https://unity.com/). Here we released the whole [Unity project](https://drive.google.com/file/d/17Jn5iov3e1rkWgOhID5c2RCnGWTxiuWA/view?usp=sharing). The project is stored in the google drive due to its size. [Background images](https://drive.google.com/file/d/1dx03ijDzJkbVp0XnZbvKLTYZSYMDJHsf/view?usp=sharing) are also required. Once you download them the file structure should be like:
+VehicleX is based on [Unity](https://unity.com/). Here we released the whole [Unity project](https://drive.google.com/file/d/17Jn5iov3e1rkWgOhID5c2RCnGWTxiuWA/view?usp=sharing) include 3D vehicle models and Unity python interface. The project is stored in the google drive due to its size. [Background images](https://drive.google.com/file/d/1dx03ijDzJkbVp0XnZbvKLTYZSYMDJHsf/view?usp=sharing) are also required. Please download them by click links above. Once you download them the file structure should be like:
 
 ```
 ~
@@ -37,7 +37,7 @@ VehicleX is based on [Unity](https://unity.com/). Here we released the whole [Un
 
 * Please make sure the resolution of the game is 1920*1080. It can be controled in the game tab.
 * If you see error CS1061: 'RawImage' does not contain a definition for 'm_Texture'. Please open this file and replace all content with ./Script/RawImage.cs.
-* Due to copyright issues. We are only able to release part of vehilce models in source code. The build version has all vehicle models included.  
+* Due to copyright issues. We are only able to release part of vehicle models in source code. The build version has all vehicle models included.  
 
 ## Separate 3D models
 
