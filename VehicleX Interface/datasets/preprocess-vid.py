@@ -11,13 +11,13 @@ random.seed (1)
 
 parser = argparse.ArgumentParser(description='outputs')
 parser.add_argument('--ori_path',default="./VehicleID_V1.0/",type=str, help='./target dataset and attribute definition')
-parser.add_argument('--target_path',default='./VID_split_sid/',type=str, help='./output attributes')
+parser.add_argument('--target_path',default='./VID_split/',type=str, help='./output attributes')
 opt = parser.parse_args()
 
 ori_path = opt.ori_path
 target_path = opt.target_path
 
-def frames_percam(single_id = True):
+def frames_percam(single_id = False):
     all_pids = {}
     real_path = ori_path + "/train_test_split/train_list.txt"
     only_name = []

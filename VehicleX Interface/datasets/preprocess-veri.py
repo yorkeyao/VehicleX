@@ -11,7 +11,7 @@ random.seed (1)
 
 parser = argparse.ArgumentParser(description='outputs')
 parser.add_argument('--ori_path',default="./VeRi/image_train/",type=str, help='./target dataset and attribute definition')
-parser.add_argument('--target_path',default='./VeRi/cam_split_sid/',type=str, help='./output attributes')
+parser.add_argument('--target_path',default='./VeRi/cam_split/',type=str, help='./output attributes')
 opt = parser.parse_args()
 
 ori_path = opt.ori_path
