@@ -36,7 +36,7 @@ VehicleX is based on [Unity](https://unity.com/). Here we released the whole [Un
 ## Notice
 
 * Please make sure the resolution of the game is 1920*1080. It can be controled in the game tab.
-* If you see error CS1061: 'RawImage' does not contain a definition for 'm_Texture'. Please replace Unity/Hub/Editor/2019.3.0a8/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Rawimages.cs with ./Script/RawImage.cs in this github project (Path can be different depends on your Unity version).
+* If you see error CS1061: 'RawImage' does not contain a definition for 'm_Texture'. Please replace Unity/Hub/Editor/2019.3.0a8/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Rawimages.cs with ./Script/RawImage.cs in this github project (Path can be different depends on your Unity version). Please check this issue for more details: https://github.com/yorkeyao/VehicleX/issues/8.
 * Due to copyright issues. We are only able to release part of vehicle models in source code. The build version has all vehicle models included.  
 
 ## Separate 3D models
