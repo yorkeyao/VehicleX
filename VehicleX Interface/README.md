@@ -12,7 +12,7 @@ VehicleX contains 1,362 vehicles of various models in 3D with fully editable att
 
 ## Requirements
 
-* OS: Windows 10 or Ubuntu 14.04+.
+* OS: Windows 10 or Ubuntu 14.04+. 
 * Python 3.6 only.
 * Linux Server: X server with GLX module enabled.
 
@@ -23,8 +23,8 @@ The directly runnable version is available. We have both [windows version](https
 ```
 ~
 └───VehicleX
-    └───Build-win(is 'Build-linus' if you choose linux)
-    │   │ VehicleX.exe(is 'VehicleX.x86_64' if you choose linux)
+    └───Build-win(is 'Build-linus' if you use linux)
+    │   │ VehicleX.exe(is 'VehicleX.x86_64' if you use linux)
     │   │ ...
     │
     └───Background_imgs
