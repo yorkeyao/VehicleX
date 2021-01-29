@@ -1,5 +1,6 @@
 import numpy as np
 import json
+import random
 
 
 def write_json (json_path, cam_info, attribute_list, task_info, best_score):
@@ -17,12 +18,47 @@ def write_json (json_path, cam_info, attribute_list, task_info, best_score):
     with open(json_path, 'w') as outfile:
         json.dump(task_info, outfile, indent=4)
 
+def sample_values(attribute_list, variance_list, order_list, dataset_size):
+    cnt = 0
+    for attribute_name in order_list:
+        if attribute_name == "orientation":
+            angle = np.random.permutation(ancestral_sampler(mu = attribute_list[cnt:cnt+6], sigma = variance_list[:6], size=dataset_size * 3))
+            cnt = cnt + 6
+        if attribute_name == "light intensity":
+            temp_intensity_list = np.random.normal(loc=attribute_list[cnt], scale=variance_list[cnt], size=dataset_size + 100)  
+            cnt = cnt + 1
+        if attribute_name == "light direction":
+            temp_light_direction_x_list = np.random.normal(loc=attribute_list[cnt], scale=variance_list[cnt], size=dataset_size + 100)
+            cnt = cnt + 1
+        if attribute_name == "camera height":
+            Cam_height_list = np.random.normal(loc=attribute_list[cnt], scale=variance_list[cnt], size=dataset_size + 100) 
+            cnt = cnt + 1
+        if attribute_name == "camera distance":
+            Cam_distance_y_list = np.random.normal(loc=attribute_list[9], scale=variance_list[9], size=dataset_size + 100) 
+            cnt = cnt + 1
+    return angle, temp_intensity_list, temp_light_direction_x_list, Cam_height_list, Cam_distance_y_list
+    
+def get_color_distribution(id_num, model_num):
+    vehicle_info = {}
+    vehicle_info['model'] = []
+    vehicle_info['R'] = []
+    vehicle_info['G'] = []
+    vehicle_info['B'] = []
+    for i in range(id_num):
+        vehicle_info['model'].append(i % model_num)
+        vehicle_info['R'].append(float(random.randint(0,255)) / 255)
+        vehicle_info['G'].append(float(random.randint(0,255)) / 255)
+        vehicle_info['B'].append(float(random.randint(0,255)) / 255)
+    return vehicle_info
+
 def get_cam_attr(cam_info):
     control_list = []
     attribute_list = []
     variance_list = []
+    order_list = []
     for attribute in cam_info['attributes'].items():
         attribute_name = attribute[0]
+        order_list.append(attribute_name)
         attribute_content = attribute[1]
         if attribute_content[0] == 'Gaussian Mixture':
             range_info = attribute_content[1]

@@ -6,6 +6,7 @@ VehicleX contains 1,362 vehicles of various models in 3D with fully editable att
 
 ## News
 
+* (1/2021) We added support for change vehicle color. 
 * (8/2020) We added attribute learning part and Posenet support. 
 * (1/2020) We have released the VehicleX source code.  
 * (12/2019) We increased the vehicle numbers from 1,209 to 1,362 and labeled car types and color.  
@@ -63,7 +64,13 @@ That will save learned attribute to the output json file. After that, you can ge
 python inference.py --setting './settings/VehicleID-out.json'
 ```
 
-## Running with Real Data
+This will generate a dataset using origrinal 1,362 ids. If you want to generate vehicles with random colors, please download this [package](https://drive.google.com/file/d/10zuKlpqWnd5uaPFcmOXq6pOuZmGpi5W3/view?usp=sharing) and run: 
+
+```python
+python random_color_inference.py --setting './settings/VehicleID-out.json'
+```
+
+## Training with Real Data
 
 You will need real data prepared. We provide the configure json file for VehilceID and VeRi. You may need to download these datasets from their home pages ([VeRi](https://github.com/JDAI-CV/VeRidataset), [VehicleID](https://www.pkuml.org/resources/pku-vehicleid.html)). Please download them and store in a file structure like this:  
 
