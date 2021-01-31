@@ -2,7 +2,7 @@
 
 ![fig1](https://github.com/yorkeyao/VehicleX/blob/master/VehicleX%20Interface/Images/VehicleX.jpg)  
 
-This repository includes our code for the paper 'Simulating Content Consistent Vehicle Datasets with Attribute Descent' in ECCV2020. The VehicleX data is also with [CVPR AI City Challenge 2020](https://www.aicitychallenge.org/) and [Alice Challenge](http://alice-challenge.site/).
+This repository includes our code for the paper 'Simulating Content Consistent Vehicle Datasets with Attribute Descent' in ECCV2020. The VehicleX data is also with [CVPR AI City Challenge 2021](https://www.aicitychallenge.org/) and [Alice Challenge](http://alice-challenge.site/).
 
 Related material: [Paper](https://arxiv.org/abs/1912.08855), [Demo](http://vehiclex-demo.yaoy.cc:9610/), [6min Presentation](https://www.youtube.com/watch?v=JdA9Y_kPfJ4), [1min Intro](https://www.youtube.com/watch?v=YfCK4wngUac).
 
