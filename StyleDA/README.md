@@ -9,7 +9,7 @@ This repo is based on Weijian's [SPGAN](https://github.com/Simon4Yan/eSPGAN). Th
     |   │   │ trainA
     |   │   │ trainB
     |   │   │ testA
-    |   │   │ testA
+    |   │   │ 
     └───code
     │   │ train_spgan.py
     │   │ test_spgan.py
