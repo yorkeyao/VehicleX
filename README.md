@@ -4,9 +4,9 @@
 
 This repository includes our code for the paper 'Simulating Content Consistent Vehicle Datasets with Attribute Descent' in ECCV2020. The VehicleX data is also with [CVPR AI City Challenge 2021](https://www.aicitychallenge.org/) and [Alice Challenge](http://45.32.72.229/).
 
-Related material: [Paper](https://arxiv.org/abs/1912.08855), [Demo](http://vehiclex-demo.yaoy.cc:16905/), [6min Presentation](https://www.youtube.com/watch?v=JdA9Y_kPfJ4), [1min Intro](https://www.youtube.com/watch?v=YfCK4wngUac).
+Related material: [Paper](https://arxiv.org/abs/1912.08855), [Demo](http://vehiclex-demo.yaoy.cc:9610/), [6min Presentation](https://www.youtube.com/watch?v=JdA9Y_kPfJ4), [1min Intro](https://www.youtube.com/watch?v=YfCK4wngUac).
 
-You may play with our [Demo](http://vehiclex-demo.yaoy.cc:16905/) for a quick view of our data. This demo contains 70 ids out of 1362. The whole procedure of using VehicleX images is in three steps:
+You may play with our [Demo](http://vehiclex-demo.yaoy.cc:9610/) for a quick view of our data. This demo contains 70 ids out of 1362. The whole procedure of using VehicleX images is in three steps:
 
 1) Attribute distribution learning and generate images by VehicleX engine with learned attributes (content level domain adaptation); 
 
