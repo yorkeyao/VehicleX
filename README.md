@@ -52,6 +52,12 @@ If you find this code useful, please kindly cite:
   booktitle={ECCV},
   year={2020}
 }
+@article{yao2023attribute,
+  title={Attribute Descent: Simulating Object-Centric Datasets on the Content Level and Beyond},
+  author={Yao, Yue and Zheng, Liang and Yang, Xiaodong and Napthade, Milind and Gedeon, Tom},
+  journal={TPAMI},
+  year={2023}
+}
 @inproceedings{tang2019pamtri,
   title={Pamtri: Pose-aware multi-task learning for vehicle re-identification using highly randomized synthetic data},
   author={Tang, Zheng and Naphade, Milind and Birchfield, Stan and Tremblay, Jonathan and Hodge, William and Kumar, Ratnesh and Wang, Shuo and Yang, Xiaodong},
